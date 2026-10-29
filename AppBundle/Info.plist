@@ -2,27 +2,27 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-    <key>CFBundleDisplayName</key>
-    <string>UltimateScrollWM</string>
-    <key>CFBundleExecutable</key>
-    <string>UltimateScrollWM</string>
-    <key>CFBundleIdentifier</key>
-    <string>com.local.UltimateScrollWM</string>
-    <key>CFBundleInfoDictionaryVersion</key>
-    <string>6.0</string>
-    <key>CFBundleName</key>
-    <string>UltimateScrollWM</string>
-    <key>CFBundlePackageType</key>
-    <string>APPL</string>
-    <key>CFBundleShortVersionString</key>
-    <string>0.7.1</string>
-    <key>CFBundleVersion</key>
-    <string>9</string>
-    <key>LSMinimumSystemVersion</key>
-    <string>13.0</string>
-    <key>LSUIElement</key>
-    <true/>
-    <key>NSHumanReadableCopyright</key>
-    <string>Personal build. Paneru engine Copyright © 2025 Karinushka, MIT License.</string>
+	<key>CFBundleDisplayName</key>
+	<string>UltimateScrollWM</string>
+	<key>CFBundleExecutable</key>
+	<string>UltimateScrollWM</string>
+	<key>CFBundleIdentifier</key>
+	<string>com.local.UltimateScrollWM</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleName</key>
+	<string>UltimateScrollWM</string>
+	<key>CFBundlePackageType</key>
+	<string>APPL</string>
+	<key>CFBundleShortVersionString</key>
+	<string>0.7.2</string>
+	<key>CFBundleVersion</key>
+	<string>10</string>
+	<key>LSMinimumSystemVersion</key>
+	<string>13.0</string>
+	<key>LSUIElement</key>
+	<true/>
+	<key>NSHumanReadableCopyright</key>
+	<string>Personal build. Paneru engine Copyright © 2025 Karinushka, MIT License.</string>
 </dict>
 </plist>
