@@ -10,7 +10,7 @@ Pencereler yan yana bir şeritte durur. Yeni bir pencere açıldığında diğer
 
 Hazır paket (Developer ID ile imzalı ve **notarize edilmiş** DMG, yalnızca Apple Silicon):
 
-**[Son sürümü indir](https://github.com/malimusavircoder/UltimateScrollWM/releases/latest)**
+**[Son sürümü indir](https://github.com/nexivon/UltimateScrollWM/releases/latest)**
 
 DMG'yi açıp `UltimateScrollWM.app`'i `Applications` klasörüne sürükle. Apple
 doğrulamasından geçtiği için **Gatekeeper uyarısı çıkmaz**. Sonra **Aygıt Denetimi
