@@ -149,6 +149,23 @@ Paneru yapılandırması: `~/Library/Application Support/UltimateScrollWM/config
     - Ek emniyet: panel boyutu ekran alanıyla sınırlandı — içerik ölçümü
       beklenmedik bir değer döndürürse ekranı kaplayan boş panel oluşamaz.
     - Teşhis: boş liste durumu da `secici.txt`'e `pencereSayisi: 0` olarak yazılır.
+19. **Seçici kapanış sırası**: `commit()` önce seçimi uyguluyor
+    (`activateSwitcherSelection()` → `raiseWindow()`), sonra paneli kapatıyordu.
+    Bu Erişilebilirlik çağrısı yavaşlarsa veya bloklanırsa `endSession()`
+    hiç çalışmıyor ve panel ekranda takılı kalıyordu. Artık **panel önce
+    kapanıyor**, seçim sonra uygulanıyor (seçim bilgisi oturum verisinde
+    durduğu için sıra değişimi güvenli).
+
+### Not: "içi boş mavi çerçeve" bir hata değil
+
+Ekranda penceresiz bir alanda duran mavi, yuvarlatılmış çerçeve **paneru'nun
+`[decorations.active.border]`** özelliğidir (varsayılan: `#5E9CFF`, 3 px).
+Paneru ekran boyutunda görünmez bir kaplama penceresi açıp odaktaki pencerenin
+etrafına çizer; odakta görünür pencere yoksa (başka çalışma alanı, küçültülmüş,
+masaüstü) geriye sadece çerçeve kalır. Paneru duraklatılınca kaplama penceresi
+de kapandığı için çerçeve kaybolur — arıza sanılmasın.
+Kapatma: **Ayarlar → Pencere Düzeni → "Odaktaki pencereyi renkli çerçeveyle
+göster"** veya `config.toml`'da `enabled = false`.
 
 ## Tespit edilen sorunlar
 

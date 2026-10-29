@@ -64,8 +64,13 @@ final class WindowSwitcherController {
     /// Seçimi uygular ve paneli kapatır (`⌥` bırakıldığında).
     func commit() {
         guard isActive else { return }
-        engine?.activateSwitcherSelection()
+        // Panel ÖNCE kapanır, seçim SONRA uygulanır. `activateSwitcherSelection()`
+        // içindeki AX çağrısı (pencereyi öne getirme) yavaşlarsa veya bloklanırsa
+        // panelin ekranda takılı kalmasını engeller. Seçim bilgisi oturum
+        // verisinde durduğu için sıra değişimi güvenli.
+        let engine = self.engine
         endSession()
+        engine?.activateSwitcherSelection()
     }
 
     /// İptal eder, seçimi uygulamaz (`Esc`).
